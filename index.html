@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Generator pixelowych rysunków</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Monoton">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body onload="init()">
+    <h1>Generator pixelowych rysunków</h1>
+
+    <h2>Podaj rozmiar planszy</h2>
+    <form id="sizePicker">
+        Wysokość:
+        <input type="number" id="input_height" name="height" min="1" value="1">
+        Szerokość:
+        <input type="number" id="input_width" name="width" min="1" value="1">
+        <input type="submit">
+    </form>
+    <h2>Wybierz kolor</h2>
+    <input type="color" id="colorPicker">
+    <h2>Zaprojektuj rysunek</h2>
+
+    <div id="tableContainer">
+      <table id="tab">
+      </table>
+    </div>
+
+    <hr>
+    <footer>
+      <adress>
+        Created by Paweł Chmielewski 2017 &copy;. Napisz do <a href="mailto:p.t.chmielewski@gmail.com">mnie</a>
+      </adress>
+    </footer>
+
+    <script src="designs.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+</body>
+</html>
